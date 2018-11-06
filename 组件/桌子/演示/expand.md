@@ -32,6 +32,7 @@ const data = [
 ReactDOM.render(
   <Table
     columns={columns}
+    defaultExpandAllRows={true}
     expandedRowRender={record => <p style={{ margin: 0 }}>{record.description}</p>}
     dataSource={data}
   />,
